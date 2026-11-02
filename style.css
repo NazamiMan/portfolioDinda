@@ -484,9 +484,22 @@ body::before { background-image: none; }
   .resume-section { padding-top: 44px; padding-bottom: 44px; }
   .section-index { max-width: 90px; text-align: right; }
   .timeline-heading { align-items: flex-start; flex-direction: column; gap: 4px; }
-  .skills-grid { grid-template-columns: 1fr; }
+  .skills-grid,
+  .preview-grid {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    padding: 4px 2px 16px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .skills-grid::-webkit-scrollbar,
+  .preview-grid::-webkit-scrollbar { display: none; }
+  .skill-group,
+  .preview-card { flex: 0 0 min(84%, 360px); scroll-snap-align: start; }
   .skill-group { min-height: auto; }
-  .preview-grid { grid-template-columns: 1fr; }
   .preview-card:last-child { display: block; }
   .preview-art { min-height: 165px; }
 }
