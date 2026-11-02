@@ -694,6 +694,8 @@ main, .site-footer { position: relative; z-index: 1; }
 .education-kicker { color: #7188a6; font-size: 8px; font-weight: 600; letter-spacing: 1.1px; }
 .education-school h3 { margin: 5px 0; color: var(--ink); font-size: 15px; font-weight: 600; }
 .education-school .timeline-subtitle { margin: 0; color: var(--muted); font-size: 10px; }
+.education-documentation { display: inline-flex; align-items: center; gap: 4px; margin-top: 7px; color: #315f9b; font-size: 9px; font-weight: 500; text-decoration: underline; text-underline-offset: 3px; }
+.education-documentation:hover { color: #234a7c; }
 .education-rule { position: relative; height: 1px; margin: 20px 0 15px; background: var(--line); }
 .education-rule span { position: absolute; top: -3px; left: 0; width: 7px; height: 7px; border: 1px solid white; border-radius: 50%; background: var(--pink); box-shadow: 0 0 0 2px #cbd9eb; }
 .education-description { max-width: 550px; margin: 0; color: var(--muted); font-size: 10px; line-height: 1.9; }
