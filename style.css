@@ -104,7 +104,7 @@ h1, h2, h3, p { margin-top: 0; }
 .certificate-paper { position: relative; display: flex; min-height: 165px; flex-direction: column; align-items: center; justify-content: center; overflow: hidden; border: 1px solid rgba(222, 154, 183, .28); border-radius: 11px; background: linear-gradient(145deg, #fff5f9, #fbe8f0); text-align: center; }
 .certificate-preview { min-height: 0; aspect-ratio: 1.414 / 1; background: #fff; }
 .certificate-preview::before, .certificate-preview::after { display: none; }
-.certificate-preview iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: #fff; pointer-events: none; }
+.certificate-preview img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #fff; }
 .certificate-paper::before { position: absolute; inset: 7px; border: 1px solid rgba(210, 143, 171, .3); border-radius: 7px; content: ""; }
 .certificate-paper::after { position: absolute; top: -50%; left: -60%; width: 45%; height: 200%; background: linear-gradient(90deg, transparent, rgba(255,255,255,.7), transparent); content: ""; transform: rotate(25deg); transition: left .65s ease; }
 .certificate-card:hover .certificate-paper::after { left: 120%; }
@@ -764,11 +764,18 @@ main, .site-footer { position: relative; z-index: 1; }
 .experience-carousel-track::-webkit-scrollbar { display: none; }
 .experience-slide { flex: 0 0 min(78vw, 430px); scroll-snap-align: start; }
 .internship-slide { position: relative; display: flex; min-width: 0; flex-direction: column; gap: 16px; overflow: hidden; padding: 42px 18px 18px; border: 1px solid rgba(255,255,255,.7); border-radius: 24px; background: linear-gradient(145deg, rgba(255,255,255,.72), rgba(224,237,251,.58)); box-shadow: 0 16px 38px rgba(55,83,125,.13), inset 0 1px 0 rgba(255,255,255,.88); }
-.experience-photo { position: relative; display: flex; width: 100%; aspect-ratio: 4 / 3; min-width: 0; flex: 0 0 auto; flex-direction: column; align-items: center; justify-content: center; gap: 8px; overflow: hidden; border: 1px dashed rgba(49,95,155,.35); border-radius: 10px; color: #315f9b; background: linear-gradient(145deg, rgba(222,237,255,.84), rgba(195,215,241,.76)); text-align: center; }
+.experience-photo { position: relative; display: flex; width: 100%; height: 90%; aspect-ratio: 4 / 3; min-width: 0; flex: 0 0 auto; flex-direction: column; align-items: center; justify-content: center; gap: 8px; overflow: hidden; border: 1px dashed rgba(49,95,155,.35); border-radius: 10px; color: #315f9b; background: linear-gradient(145deg, rgba(222,237,255,.84), rgba(195,215,241,.76)); text-align: center; }
+.experience-photo-karo { position: relative; display: flex; width: 100%; height: 90%; aspect-ratio: 4 / 3; min-width: 0; flex: 0 0 auto; flex-direction: column; align-items: center; justify-content: center; gap: 8px; overflow: hidden; border: 1px dashed rgba(49,95,155,.35); border-radius: 10px; color: #315f9b; background: linear-gradient(145deg, rgba(222,237,255,.84), rgba(195,215,241,.76)); text-align: center; }
+.experience-photo-nyam { position: relative; display: flex; width: 100%; height: 90%; aspect-ratio: 4 / 3; min-width: 0; flex: 0 0 auto; flex-direction: column; align-items: center; justify-content: center; gap: 8px; overflow: hidden; border: 1px dashed rgba(49,95,155,.35); border-radius: 10px; color: #315f9b; background: linear-gradient(145deg, rgba(222,237,255,.84), rgba(195,215,241,.76)); text-align: center; }
+.experience-photo-pp { position: relative; display: flex; width: 100%; height: 90%; aspect-ratio: 4 / 3; min-width: 0; flex: 0 0 auto; flex-direction: column; align-items: center; justify-content: center; gap: 8px; overflow: hidden; border: 1px dashed rgba(49,95,155,.35); border-radius: 10px; color: #315f9b; background: linear-gradient(145deg, rgba(222,237,255,.84), rgba(195,215,241,.76)); text-align: center; }
+.internship-photo-icon { display: grid; width: 46px; height: 46px; place-items: center; border: 1px solid rgba(49,95,155,.25); border-radius: 50%; background: rgba(255,255,255,.55); font-size: 24px; }
 .internship-photo-icon { display: grid; width: 46px; height: 46px; place-items: center; border: 1px solid rgba(49,95,155,.25); border-radius: 50%; background: rgba(255,255,255,.55); font-size: 24px; }
 .internship-photo-label { font-size: 9px; font-weight: 600; letter-spacing: 1px; }
 .internship-photo-size { color: #64748b; font-size: 8px; }
 .experience-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.experience-photo-karo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.experience-photo-nyam img { position: absolute; inset: 0; width: 100%; height: 190%; object-fit: cover; }
+.experience-photo-pp img { position: absolute; inset: 0; width: 100%; height: 120%; object-fit: cover; }
 .internship-copy { min-width: 0; }
 .internship-copy h3 { margin: 8px 0 5px; color: #172b4d; font-size: 16px; font-weight: 600; }
 .internship-copy .experience-points { padding-left: 17px; }
